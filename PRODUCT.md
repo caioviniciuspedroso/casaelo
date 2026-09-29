@@ -24,3 +24,6 @@ Logos PNG criados na conversa e guia de identidade. Sem fotografias reais de tra
 
 ## Implementation
 Escolha técnica do agente: HTML/CSS/JS estáticos, Three.js para a cena interativa, navegação de uma página. Remotion foi sugerido como possibilidade; não é exigência. Hospedagem privada em Sites.
+
+## Direção aprovada em 29/09/2026
+Maior presença de fotografias, destaque para alianças, anéis de formatura e presentes. Substituir 3D por vídeo realista; enquanto a mídia é gerada, exibir fotografia de bancada. Prompt do Google Flow entregue. Fotos de demonstração autorizadas, para trocar por imagens próprias posteriormente.

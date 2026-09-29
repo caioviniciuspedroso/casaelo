@@ -182,3 +182,6 @@ Campo verde, chamada serifada, botão dourado de WhatsApp e coluna de dados com 
 - **Don't** acrescente depoimentos, prazos, garantias ou endereço não confirmados.
 - **Don't** atribua 30 anos de existência à nova empresa ou mencione o avô na página.
 - **Don't** trate documentação extraída do código como aprovação visual renderizada.
+
+## Revisão fotográfica de 29/09/2026
+A vitrine usa três fotografias em composição assimétrica: alianças em arco, anel com pedra e colar. Serviços mantêm abas com imagem à esquerda e conteúdo à direita. No celular, alianças ocupam a largura; formatura e presentes dividem a linha. A seção de ofício perdeu o WebGL e usa fotografia vertical de bancada, com integração opcional de vídeo em film.js. Sem MP4 configurado, não há reprodução nem cena de maçarico. Paleta e tipografia anteriores preservadas. Fotos externas são identificadas como referências; fontes em CREDITOS-FOTOS.md.

@@ -1,35 +1,24 @@
-# Casa Elo — Landing page de serviços
+# Casa Elo — página de joias e serviços
 
-Página estática com fontes e imagens locais. Sem dependência de um servidor de aplicação.
+Página estática com fotos e fontes locais. Execute node serve.mjs e abra http://127.0.0.1:4173. A publicação utiliza dist.
 
-## Conteúdo
+## Revisão visual — 29/09/2026
 
-- Restauração e conserto de joias.
-- Fabricação de alianças e anéis de formatura.
-- Ajustes, gravação e cravação apresentados como possibilidades para consulta técnica.
-- Amolação de alicates.
-- História: de pai para filho, mais de 30 anos de ofício. A página não menciona o avô e não atribui essa idade à empresa recém-criada.
-- WhatsApp: +55 64 99285-1597. Caldas Novas, GO; envio de peças para todo o Brasil.
-
-## Interações
-
-Abas acessíveis por teclado. Comparador de imagens com controle de faixa. Cena WebGL em Three.js 0.185.1: maçarico modelado em 3D, chama azul com shader, luz dinâmica e joia sobre bancada. A rolagem controla a intensidade. A cena pausa fora da tela e com a página oculta; movimento reduzido recebe composição estática. O comparador usa imagens geradas e identificadas como demonstração ilustrativa.
-
-Remotion foi avaliado como opção sugerida. Foi escolhido Three.js porque a experiência depende de interação contínua com a rolagem, sem exportação de um vídeo.
+- Vitrine fotográfica de alianças, formatura e presentes, com orçamento contextual pelo WhatsApp.
+- Quatro abas de serviços com fotos grandes.
+- Comparador antes/depois mantido, com imagens geradas identificadas como ilustração.
+- Cena 3D substituída por fotografia de bancada. O vídeo ainda não foi gerado: roteiro e prompt em ROTEIRO-FLOW.md.
+- História de pai para filho e mais de 30 anos de ofício, sem atribuir essa idade à nova empresa.
+- Atendimento em Caldas Novas e envio de peças para todo o Brasil; WhatsApp +55 64 99285-1597.
 
 ## Arquivos
 
-- `dist/index.html`: textos, seções, links e contatos.
-- `dist/styles.css`: identidade e responsividade.
-- `dist/app.js`: abas, menu e comparador.
-- `dist/atelier.js`: cena 3D e comportamento com a rolagem.
-- `dist/assets/`: imagens, logos, fontes e Three.js locais.
-- `asset-prompts.json`: origem das imagens ilustrativas geradas para a página.
+dist/index.html: conteúdo e fotos. dist/styles.css: identidade e responsividade. dist/app.js: menu, abas e comparador. dist/film.js: integração opcional do vídeo, sem requisição a arquivo inexistente. CREDITOS-FOTOS.md: fontes das imagens de demonstração.
 
-Para abrir localmente, rode `node serve.mjs` e acesse `http://127.0.0.1:4173`. Abrir o HTML por `file://` não carrega os módulos da cena 3D. A publicação utiliza a pasta `dist`.
-
-Os logos vieram da identidade Casa Elo criada nesta conversa. As imagens ilustrativas foram geradas com ImageGen. Não são fotos de resultados reais. Fontes: Italiana e DM Sans, distribuídas pelo Google Fonts; os arquivos de licença acompanham os assets. Three.js: licença MIT incluída.
+O vídeo, quando fornecido e configurado, começa uma vez ao entrar na tela; os controles nativos ficam disponíveis. Movimento reduzido evita reprodução automática. Em erro de mídia, a fotografia reaparece. A reprodução do vídeo final depende de teste após recebê-lo.
 
 ## Verificação
 
-Verificação de sintaxe JS, referências locais, links internos, destino do WhatsApp e interações DOM. O navegador integrado ficou indisponível durante esta execução: a renderização WebGL e a conferência visual em desktop/mobile não foram confirmadas. O detector de design rodou em modo degradado sem os parsers completos; não equivale a auditoria visual aprovada.
+Verificados: arquivos locais, âncoras, número do WhatsApp, quatro abas e navegação por teclado, comparador nos limites e menu com Escape. Revisão visual da página em desktop e viewport móvel de 390 px. Navegação por teclado confirmada no navegador; o controle de cliques da ferramenta teve comportamento inconsistente, portanto a checagem automatizada não comprova gestos de toque em dispositivo físico. Sem vídeo configurado, a fotografia é exibida e não há controle de reprodução falso.
+
+As fotografias são referências temporárias, não um portfólio da Casa Elo. A imagem de abertura e o antes/depois são ilustrativos e gerados por IA. Fontes Italiana e DM Sans com licenças incluídas. O cliente pode enviar imagens próprias para as próximas revisões.

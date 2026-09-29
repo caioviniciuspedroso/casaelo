@@ -14,11 +14,11 @@
 <svg class="icon-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol><symbol id="arrow-up" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol><symbol id="chevrons" viewBox="0 0 24 24"><path d="m9 7-5 5 5 5m6-10 5 5-5 5"/></symbol></svg>
 <header class="header">
   <a class="brand" href="#inicio" aria-label="Casa Elo — início"><img src="assets/logo-gold.png" alt="Casa Elo Joalheria" width="1774" height="887"></a>
-  <nav aria-label="Navegação principal"><a href="#servicos">Serviços</a><a href="#restauracao">Restauração</a><a href="#oficio">Nosso ofício</a></nav>
+  <nav aria-label="Navegação principal"><a href="#joias">Joias</a><a href="#servicos">Serviços</a><a href="#restauracao">Restauração</a><a href="#oficio">Nosso ofício</a></nav>
   <a class="header-contact" href="https://wa.me/5564992851597?text=Ol%C3%A1%2C%20Casa%20Elo!%20Gostaria%20de%20avaliar%20uma%20joia." target="_blank" rel="noopener">Fale com a Casa <svg><use href="#arrow-up"/></svg></a>
   <button class="menu-button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu"><span></span><span></span></button>
 </header>
-<nav id="mobile-menu" class="mobile-menu" aria-label="Navegação mobile" hidden><a href="#servicos">Serviços</a><a href="#restauracao">Restauração</a><a href="#oficio">Nosso ofício</a><a href="#contato">Fale com a Casa</a></nav>
+<nav id="mobile-menu" class="mobile-menu" aria-label="Navegação mobile" hidden><a href="#joias">Joias</a><a href="#servicos">Serviços</a><a href="#restauracao">Restauração</a><a href="#oficio">Nosso ofício</a><a href="#contato">Fale com a Casa</a></nav>
 <main id="conteudo">
   <section class="hero" id="inicio" aria-labelledby="hero-title">
     <img class="hero-photo" src="assets/casa-elo-hero.webp" alt="Composição ilustrativa de alianças douradas, uma delas com detalhe verde" width="1536" height="1024" fetchpriority="high">
@@ -31,6 +31,16 @@
     <div class="hero-foot"><span>De pai para filho.<br><strong>Mais de 30 anos de ofício.</strong></span><a href="#servicos" class="scroll-link">Conheça a Casa <span class="scroll-line"></span></a><span>Caldas Novas, GO<br><strong>Envio para todo o Brasil</strong></span></div>
   </section>
 
+
+  <section class="collections section-pad" id="joias" aria-labelledby="jewels-title">
+    <div class="section-heading"><div><span class="eyebrow">Para o que merece ficar</span><h2 id="jewels-title">Um momento.<br><em>Um elo para sempre.</em></h2></div><p>Alianças para uma vida a dois. Um anel para celebrar uma conquista. Uma joia para dizer o que as palavras não alcançam.</p></div>
+    <div class="jewel-grid">
+      <a class="jewel-card" data-service="alianças sob medida" href="https://wa.me/5564992851597" target="_blank" rel="noopener"><div class="jewel-photo"><img src="assets/aliancas.webp" alt="Referência de duas alianças douradas sobre mármore" width="1400" height="934" loading="lazy"><span class="photo-index">01 / Celebrar o amor</span></div><div class="jewel-heading"><h3>Alianças</h3><svg><use href="#arrow-up"/></svg></div><p>Do primeiro sim a todos os dias que vêm depois.</p><span class="jewel-action">Criar nossas alianças</span></a>
+      <a class="jewel-card" data-service="um anel de formatura" href="https://wa.me/5564992851597" target="_blank" rel="noopener"><div class="jewel-photo"><img src="assets/anel-pedra.webp" alt="Anel com pedra azul como referência de estilo para uma peça personalizada" width="1400" height="1400" loading="lazy"><span class="photo-index">02 / Marcar uma conquista</span></div><div class="jewel-heading"><h3>Formatura</h3><svg><use href="#arrow-up"/></svg></div><p>Um símbolo à altura do caminho que você percorreu.</p><span class="jewel-action">Planejar meu anel</span></a>
+      <a class="jewel-card" data-service="uma joia para presentear" href="https://wa.me/5564992851597" target="_blank" rel="noopener"><div class="jewel-photo"><img src="assets/presentes.webp" alt="Referência de colar dourado com pingente sobre tecido escuro" width="1400" height="1400" loading="lazy"><span class="photo-index">03 / Dizer com uma joia</span></div><div class="jewel-heading"><h3>Presentear</h3><svg><use href="#arrow-up"/></svg></div><p>Um gesto de carinho que fica perto, todos os dias.</p><span class="jewel-action">Encontrar um presente</span></a>
+    </div><p class="image-note">Imagens de inspiração. Modelos, materiais e disponibilidade são definidos em conversa com a Casa Elo.</p>
+  </section>
+
   <section class="services section-pad" id="servicos" aria-labelledby="services-title">
     <div class="section-heading"><h2 id="services-title">Cada joia pede<br>um cuidado <em>único.</em></h2><p>Do reparo de uma peça querida à criação de um novo significado. Encontre o serviço que faz sentido para você.</p></div>
     <div class="tabs" role="tablist" aria-label="Serviços de joalheria">
@@ -39,21 +49,21 @@
       <button role="tab" id="tab-ajustes" aria-controls="panel-ajustes" aria-selected="false" tabindex="-1">Ajustes & detalhes</button>
       <button role="tab" id="tab-cuidados" aria-controls="panel-cuidados" aria-selected="false" tabindex="-1">Outros cuidados</button>
     </div>
-    <div class="service-panel" role="tabpanel" id="panel-restauro" aria-labelledby="tab-restauro" tabindex="0">
+    <div class="service-panel" role="tabpanel" id="panel-restauro" aria-labelledby="tab-restauro" tabindex="0"><figure class="service-photo"><img src="assets/casa-elo-after.webp" alt="Imagem ilustrativa de aliança de prata polida" width="1400" height="1400" loading="lazy"><figcaption>Uma joia renovada</figcaption></figure><div class="service-detail">
       <div><h3>A beleza permanece.<br>O cuidado a revela.</h3><p>Peças que guardam lembranças merecem uma nova chance. Avaliamos o material, o estado da joia e o reparo indicado para preservar o que a torna especial.</p><a class="text-link" data-service="restauração e conserto" href="https://wa.me/5564992851597" target="_blank" rel="noopener">Solicitar avaliação <svg><use href="#arrow-up"/></svg></a></div>
-      <ul class="service-list"><li><span>Restauração de joias</span><small>Recuperação de peças marcadas pelo tempo</small></li><li><span>Conserto de correntes e fechos</span><small>Reparos conforme o material e a estrutura</small></li><li><span>Limpeza e polimento</span><small>Cuidado com a superfície e o acabamento</small></li></ul>
+      <ul class="service-list"><li><span>Restauração de joias</span><small>Recuperação de peças marcadas pelo tempo</small></li><li><span>Conserto de correntes e fechos</span><small>Reparos conforme o material e a estrutura</small></li><li><span>Limpeza e polimento</span><small>Cuidado com a superfície e o acabamento</small></li></ul></div>
     </div>
-    <div class="service-panel" role="tabpanel" id="panel-criacao" aria-labelledby="tab-criacao" tabindex="0" hidden>
+    <div class="service-panel" role="tabpanel" id="panel-criacao" aria-labelledby="tab-criacao" tabindex="0" hidden><figure class="service-photo"><img src="assets/aliancas.webp" alt="Referência de alianças douradas" width="1400" height="1400" loading="lazy"><figcaption>Feitas para a sua história</figcaption></figure><div class="service-detail">
       <div><h3>Um momento seu.<br>Uma joia também.</h3><p>Uma escolha de vida, uma conquista ou uma ideia que merece sair do papel. Conversamos sobre modelo, medidas, materiais e acabamento para criar a sua peça.</p><a class="text-link" data-service="fabricação de uma joia" href="https://wa.me/5564992851597" target="_blank" rel="noopener">Conversar sobre minha ideia <svg><use href="#arrow-up"/></svg></a></div>
-      <ul class="service-list"><li><span>Fabricação de alianças</span><small>Um símbolo para a história de vocês</small></li><li><span>Anéis de formatura</span><small>Uma conquista transformada em joia</small></li><li><span>Peças personalizadas</span><small>Projetos e possibilidades sob avaliação</small></li></ul>
+      <ul class="service-list"><li><span>Fabricação de alianças</span><small>Um símbolo para a história de vocês</small></li><li><span>Anéis de formatura</span><small>Uma conquista transformada em joia</small></li><li><span>Peças personalizadas</span><small>Projetos e possibilidades sob avaliação</small></li></ul></div>
     </div>
-    <div class="service-panel" role="tabpanel" id="panel-ajustes" aria-labelledby="tab-ajustes" tabindex="0" hidden>
+    <div class="service-panel" role="tabpanel" id="panel-ajustes" aria-labelledby="tab-ajustes" tabindex="0" hidden><figure class="service-photo"><img src="assets/bancada.webp" alt="Fotografia de referência de artesão trabalhando em um anel" width="1400" height="1400" loading="lazy"><figcaption>Precisão em cada detalhe</figcaption></figure><div class="service-detail">
       <div><h3>O detalhe faz<br>toda a diferença.</h3><p>Consulte a possibilidade de ajustar uma peça, personalizar uma mensagem ou cuidar da fixação de uma pedra. Cada intervenção começa pela avaliação da joia.</p><a class="text-link" data-service="ajustes e personalização" href="https://wa.me/5564992851597" target="_blank" rel="noopener">Consultar possibilidades <svg><use href="#arrow-up"/></svg></a></div>
-      <ul class="service-list"><li><span>Ajuste de aro</span><small>Aumento ou redução, conforme a peça</small></li><li><span>Gravação personalizada</span><small>Nomes, datas e mensagens — consulte</small></li><li><span>Revisão de cravação</span><small>Avaliação da fixação e de possíveis reparos</small></li></ul>
+      <ul class="service-list"><li><span>Ajuste de aro</span><small>Aumento ou redução, conforme a peça</small></li><li><span>Gravação personalizada</span><small>Nomes, datas e mensagens — consulte</small></li><li><span>Revisão de cravação</span><small>Avaliação da fixação e de possíveis reparos</small></li></ul></div>
     </div>
-    <div class="service-panel" role="tabpanel" id="panel-cuidados" aria-labelledby="tab-cuidados" tabindex="0" hidden>
+    <div class="service-panel" role="tabpanel" id="panel-cuidados" aria-labelledby="tab-cuidados" tabindex="0" hidden><figure class="service-photo"><img src="assets/presentes.webp" alt="Colar dourado como referência de joia" width="1400" height="1400" loading="lazy"><figcaption>Cuidado que acompanha</figcaption></figure><div class="service-detail">
       <div><h3>Precisão também<br>nos pequenos cuidados.</h3><p>Além da joalheria, realizamos amolação de alicates. Fale com a Casa para consultar o atendimento e receber orientações para o seu item.</p><a class="text-link" data-service="amolação de alicates" href="https://wa.me/5564992851597" target="_blank" rel="noopener">Consultar amolação <svg><use href="#arrow-up"/></svg></a></div>
-      <ul class="service-list"><li><span>Amolação de alicates</span><small>Consulte os modelos atendidos</small></li><li><span>Orientação de conservação</span><small>Cuidados adequados ao material da sua joia</small></li></ul>
+      <ul class="service-list"><li><span>Amolação de alicates</span><small>Consulte os modelos atendidos</small></li><li><span>Orientação de conservação</span><small>Cuidados adequados ao material da sua joia</small></li></ul></div>
     </div>
   </section>
 
@@ -71,10 +81,10 @@
     </figure>
   </section>
 
-  <section class="craft" id="oficio" aria-labelledby="craft-title">
-    <div class="craft-sticky">
-      <div class="craft-copy"><h2 id="craft-title">De pai para filho. <br>Da chama<br><em>à forma.</em></h2><p>Mais de 30 anos de experiência em um ofício que se aprende com as mãos. Na Casa Elo, esse conhecimento encontra uma nova forma de continuar.</p><div class="craft-state"><span id="craft-caption">Tudo começa com o cuidado.</span><div class="craft-progress" aria-hidden="true"><span></span></div><small id="craft-hint">Continue rolando para acender o maçarico.</small></div></div>
-      <div class="atelier-scene" role="img" aria-label="Cena 3D ilustrativa de uma bancada de joalheria: a chama do maçarico acende conforme a página é rolada."><canvas id="atelier-canvas" aria-hidden="true"></canvas><p class="scene-fallback" hidden>O domínio da técnica dá forma a cada detalhe.</p><span class="scene-caption">O OFÍCIO, EM CADA DETALHE</span></div>
+  <section class="craft craft-film" id="oficio" aria-labelledby="craft-title">
+    <div class="craft-layout">
+      <div class="craft-copy"><span class="eyebrow">O saber das mãos</span><h2 id="craft-title">De pai para filho.<br>Da chama<br><em>à forma.</em></h2><p>Mais de 30 anos de experiência em um ofício que se aprende com as mãos. Na Casa Elo, esse conhecimento encontra uma nova forma de continuar.</p><a class="text-link" data-service="uma joia feita sob medida" href="https://wa.me/5564992851597" target="_blank" rel="noopener">Converse com quem faz <svg><use href="#arrow-up"/></svg></a><div class="craft-signature"><span>30+</span><p>Anos de ofício.<br>Um cuidado que atravessa gerações.</p></div></div>
+      <figure class="atelier-film"><div class="film-frame"><img id="atelier-poster" src="assets/bancada.webp" alt="Fotografia de referência: mãos de artesão ajustando a cravação de um anel" width="1400" height="1400" loading="lazy"><video id="atelier-video" muted playsinline controls preload="metadata" poster="assets/bancada.webp" aria-label="O ofício da joalheria, da chama à forma" hidden></video><span class="film-corner" aria-hidden="true">CASA ELO<br>O OFÍCIO, EM CADA DETALHE</span></div><figcaption id="atelier-credit">Fotografia de referência do trabalho de joalheria.</figcaption></figure>
     </div>
   </section>
 
@@ -82,5 +92,5 @@
 </main>
 <footer><a class="brand" href="#inicio" aria-label="Voltar ao início"><img src="assets/logo-gold.png" alt="Casa Elo Joalheria" width="1774" height="887" loading="lazy"></a><span>O ofício atravessa gerações.</span><a href="#inicio">Voltar ao topo <svg><use href="#arrow-up"/></svg></a></footer>
 <script src="app.js" defer></script>
-<script type="module" src="atelier.js"></script>
+<script src="film.js" defer></script>
 </body></html>
