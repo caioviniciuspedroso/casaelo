@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-28T00:00:00-03:00",
+  "title": "Design System: Casa Elo",
+  "extensions": {
+    "shadows": [
+      {
+        "name": "comparison-handle",
+        "value": "0 4px 16px #0003",
+        "purpose": "Separar pegador da imagem."
+      },
+      {
+        "name": "mobile-menu",
+        "value": "0 14px 20px #0002",
+        "purpose": "Delimitar menu sobre conteúdo."
+      }
+    ],
+    "motion": [
+      {
+        "name": "control-transition",
+        "value": "0.2s ease",
+        "purpose": "Hover de botões e navegação."
+      },
+      {
+        "name": "button-lift",
+        "value": "translateY(-2px)",
+        "purpose": "Resposta discreta à ação."
+      },
+      {
+        "name": "atelier-frame-limit",
+        "value": "30fps",
+        "purpose": "Cena renderiza quando visível, exceto movimento reduzido."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile",
+        "value": "700px"
+      },
+      {
+        "name": "compact-desktop",
+        "value": "1000px"
+      },
+      {
+        "name": "wide",
+        "value": "1700px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ação principal dourada.",
+      "html": "<button class=\"ds-primary\">Conversar pelo WhatsApp <svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></button>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;gap:28px;min-height:56px;padding:17px 23px;border:0;border-radius:0;background:var(--gold,#c3a16a);color:#0a2c23;font:500 14px 'DM Sans',Arial,sans-serif;cursor:pointer;transition:background .2s,transform .2s}.ds-primary:hover{background:#ddbe89;transform:translateY(-2px)}.ds-primary:focus-visible{outline:3px solid var(--focus,#af823b);outline-offset:6px}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}"
+    },
+    {
+      "name": "Secondary link",
+      "kind": "button",
+      "description": "Link textual para avaliação.",
+      "html": "<a class=\"ds-link\" href=\"#avaliacao\">Solicitar avaliação <svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a>",
+      "css": ".ds-link{display:inline-flex;align-items:center;gap:24px;color:var(--green,#063e32);font:500 15px 'DM Sans',Arial,sans-serif;text-decoration:none;border-bottom:1px solid #8b9a87;padding-bottom:5px}.ds-link:hover{border-color:var(--green,#063e32)}.ds-link:focus-visible{outline:3px solid var(--focus,#af823b);outline-offset:6px}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "description": "Links de navegação em superfície escura.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Navegação\"><a href=\"#servicos\">Serviços</a><a href=\"#restauracao\">Restauração</a><a href=\"#oficio\">Nosso ofício</a></nav>",
+      "css": ".ds-nav{display:flex;gap:36px;padding:24px;background:#09271f;font:400 14px 'DM Sans',Arial,sans-serif}.ds-nav a{color:var(--ivory,#f3efe5);text-decoration:none;padding:8px 0;border-bottom:1px solid transparent;transition:border-color .2s}.ds-nav a:hover{border-color:var(--gold,#c3a16a)}.ds-nav a:focus-visible{outline:3px solid var(--focus,#af823b);outline-offset:6px}"
+    },
+    {
+      "name": "Selected service tab",
+      "kind": "custom",
+      "description": "Aba ativa, amostra visual sem troca de painel.",
+      "html": "<div class=\"ds-tabs\"><button class=\"ds-tab\" type=\"button\" aria-pressed=\"true\">Restauração &amp; conserto</button></div>",
+      "css": ".ds-tabs{background:var(--ivory,#f3efe5);border-bottom:1px solid var(--line,#d8d3c7)}.ds-tab{position:relative;min-height:64px;padding:18px 44px 18px 0;background:none;border:0;color:var(--green,#063e32);font:600 15px 'DM Sans',Arial,sans-serif;cursor:pointer}.ds-tab:after{content:'';position:absolute;bottom:-1px;left:0;right:28px;height:2px;background:var(--green,#063e32)}.ds-tab:hover{color:var(--green,#063e32)}.ds-tab:focus-visible{outline:3px solid var(--focus,#af823b);outline-offset:6px}"
+    },
+    {
+      "name": "Service list row",
+      "kind": "custom",
+      "description": "Linha editorial sem elevação.",
+      "html": "<ul class=\"ds-list\"><li><span>Restauração de joias</span><small>Recuperação de peças marcadas pelo tempo</small></li></ul>",
+      "css": ".ds-list{margin:0;padding:0;list-style:none;background:var(--ivory,#f3efe5);font-family:'DM Sans',Arial,sans-serif}.ds-list li{padding:17px 0;border-bottom:1px solid var(--line,#d8d3c7)}.ds-list span{display:block;color:var(--black,#171b19);font-size:19px}.ds-list small{display:block;margin-top:4px;color:var(--muted,#5d655f);font-size:14px}"
+    },
+    {
+      "name": "Comparison handle",
+      "kind": "custom",
+      "refersTo": "comparison-handle",
+      "description": "Pegador decorativo; no site, o input range fornece a interação.",
+      "html": "<span class=\"ds-handle\" aria-hidden=\"true\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"><path d=\"m9 7-5 5 5 5m6-10 5 5-5 5\"/></svg></span>",
+      "css": ".ds-handle{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--green,#063e32);color:var(--ivory,#f3efe5);box-shadow:0 4px 16px #0003}"
+    }
+  ],
+  "narrative": {
+    "keyCharacteristics": [
+      "Contraste entre seções escuras atmosféricas e áreas claras de leitura.",
+      "Italiana nos títulos; DM Sans no conteúdo e nos controles.",
+      "Macro ilustrativa e comparação com identificação explícita.",
+      "Movimento concentrado na bancada 3D e em respostas discretas dos controles."
+    ],
+    "overview": "A direção existente associa a joia ao afeto e o trabalho artesanal à continuidade. Verde profundo, dourado contido e superfícies de marfim sustentam uma presença premium. Títulos serifados amplos dão espaço à história; texto funcional simples e separadores finos organizam uma composição de baixa densidade.\n\nA metáfora sintetiza a direção já registrada, sem representar uma nova escolha de identidade. O compromisso factual é o ofício transmitido de pai para filho, com mais de 30 anos de experiência; não se atribui essa idade à empresa e não se menciona o avô na página.",
+    "rules": [
+      {
+        "body": "Use dourado como detalhe de metal e sinal de ação; mantenha verde e marfim como grandes campos da composição.",
+        "name": "The Material Rule",
+        "section": "colors"
+      },
+      {
+        "body": "Preserve DM Sans nos controles e orientações; reserve Italiana à narrativa e aos títulos.",
+        "name": "The Reading Rule",
+        "section": "typography"
+      }
+    ],
+    "dos": [
+      "**Do** preserve verde, dourado, marfim e preto suave como base da identidade.",
+      "**Do** mantenha textos visíveis independentemente das animações.",
+      "**Do** conserve foco visível, abas por teclado e alternativa à cena 3D.",
+      "**Do** identifique comparações geradas como demonstrações ilustrativas.",
+      "**Do** atribua os mais de 30 anos ao ofício transmitido de pai para filho."
+    ],
+    "northStar": "O ofício que continua",
+    "donts": [
+      "**Don't** apresente imagens ilustrativas como trabalhos reais ou fotografias da família.",
+      "**Don't** acrescente depoimentos, prazos, garantias ou endereço não confirmados.",
+      "**Don't** atribua 30 anos de existência à nova empresa ou mencione o avô na página.",
+      "**Don't** trate documentação extraída do código como aprovação visual renderizada.\r"
+    ]
+  }
+}
