@@ -8,3 +8,5 @@ Imagens temporárias para demonstração visual. Não representam trabalhos exec
 - Mãos na bancada: [kjewelry accessories](https://www.pexels.com/photo/crafting-a-blue-gemstone-ring-with-precision-32382389/).
 
 A imagem de abertura e o comparador antes/depois são ilustrações geradas por IA. Os originais e informações de procedência estão registrados nos arquivos de ativos. Trocar por fotografias autorizadas da Casa Elo conforme forem fornecidas.
+
+Vídeo de fundo: gerado por IA e fornecido/aprovado pelo usuário em 29/09/2026. Poster extraído do mesmo vídeo.

@@ -27,3 +27,6 @@ Escolha técnica do agente: HTML/CSS/JS estáticos, Three.js para a cena interat
 
 ## Direção aprovada em 29/09/2026
 Maior presença de fotografias, destaque para alianças, anéis de formatura e presentes. Substituir 3D por vídeo realista; enquanto a mídia é gerada, exibir fotografia de bancada. Prompt do Google Flow entregue. Fotos de demonstração autorizadas, para trocar por imagens próprias posteriormente.
+
+## Filme aprovado — 29/09/2026
+Vídeo do usuário integrado como fundo de largura total na seção de ofício. Chama ampla em câmera lenta, texto à esquerda sobre sombra. No celular, texto acima e vídeo enquadrado abaixo na mesma seção escura. Reprodução silenciosa em loop ao aparecer, pausa fora da tela e em aba oculta, controle manual e alternativa estática para movimento reduzido.

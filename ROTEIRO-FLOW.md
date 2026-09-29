@@ -32,3 +32,6 @@ Baixe o MP4 e envie aqui. Nome sugerido: `atelier-casa-elo.mp4`. Na integração
 Para integrar manualmente: coloque o arquivo em `dist/assets/atelier-casa-elo.mp4` e preencha `atelierVideoSource` em `dist/film.js` com `assets/atelier-casa-elo.mp4`. Ajuste o crédito para “Filme ilustrativo gerado por IA”. Verifique o vídeo e publique a nova versão. Até isso acontecer, a página exibe uma fotografia e não mostra botão de reprodução falso.
 
 Remotion pode ser usado para montar e finalizar os clipes depois de prontos. Para criar esta filmagem a partir do prompt, o roteiro está preparado para o Flow.
+
+## Atualização — vídeo recebido
+Em 29/09/2026 o usuário aprovou e enviou Fire_plume_over_gold_ring_20260929062122.mp4. O filme já está integrado como fundo na seção de ofício. As instruções anteriores ficam como histórico do roteiro inicial.
